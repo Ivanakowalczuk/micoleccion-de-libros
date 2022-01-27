@@ -16,15 +16,7 @@ class UI{
    
     }
     
-    static eliminarCruz(){
-        const Cruces = document.querySelector('.delete');
         
-        
-    }
-
-      
-
-    
     
     static agregarLibroLista(libro){
        const lista = document.querySelector('#libro-list');
@@ -39,8 +31,7 @@ class UI{
        <td><a href="#" class="btn btn-danger btn-sm delete" id='delete'>x</td>`;
 
         lista.appendChild(fila);
-
-        setTimeout(()=> document.querySelector('.delete').remove(), 60000);       
+       
 
     }
 
@@ -107,7 +98,7 @@ localStorage.setItem('libros', JSON.stringify(libros));
 //Carga de los libros en la página
 
 document.addEventListener('DOMcontentLoaded', UI.mostrarLibros());
-document.addEventListener('DOMcontentLoaded', UI.eliminarCruz());
+
 
 //Controlar el evento submit
 document.querySelector('#libro-form').addEventListener('submit',(e) => {
