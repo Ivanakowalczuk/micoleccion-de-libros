@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <title>Colección de libros</title>
+</head>
+<body>
+   <div class="container mt-4">
+       <h1 class="display-4 text-center">Mi colección de libros</h1>
+      <form action="" id="libro-form">
+        <div class="form-group mb-4">
+           <label for="titulo">Título</label>
+           <input type="text" name="" id="titulo" class="form-control">
+        </div>
+        <div class="form-group mb-4">
+           <label for="autor">Autor</label>
+           <input type="text" name="" id="autor" class="form-control">
+       </div>
+       <div class="form-group mb-4">
+        <label for="edad">Edad</label>
+        <input type="text" name="" id="edad" class="form-control">
+     </div>
+       <div class="form-group mb-4">
+          <label for="comentarios">Comentarios y URL</label>
+          <input type="text" name="" id="comentarios" class="form-control">
+       </div>
+       <input type="submit" value="Agregar libro" class="btn btn-primary col-12" name="" id="">
+   </form>
+
+   <table class="table table-striped mt-5">
+       <thead>
+           <tr class="listas">
+               <th>Título</th>
+               <th>Autor</th>
+               <th>Edad recomendada</th>
+               <th>Comentarios (puedes incluir URL  del libro digital)</th>
+               <th></th>
+
+           </tr>
+       </thead>
+       <tbody id="libro-list"></tbody>
+
+
+   </table>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
