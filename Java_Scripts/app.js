@@ -20,7 +20,6 @@ class UI{
     
     static agregarLibroLista(libro){
        const lista = document.querySelector('#libro-list');
-       
        const fila = document.createElement('tr');
 
        fila.innerHTML = `
@@ -84,7 +83,6 @@ static agregarLibro(libro){
 
 static removerLibro(comentarios){
 const libros = Datos.traerLibros();
-
 libros.forEach((libro, index)=>{
 if(libro.comentarios === comentarios){
     libros.splice(index,1);
@@ -109,6 +107,8 @@ document.querySelector('#libro-form').addEventListener('submit',(e) => {
     const autor = document.querySelector('#autor').value;
     const edad = document.querySelector('#edad').value;
     const comentarios = document.querySelector('#comentarios').value;
+   
+
 
     if(titulo === '' || autor === '' || edad === '' || comentarios === ''){
         UI.mostrarAlerta('Por favor ingrese todos los datos', 'danger');

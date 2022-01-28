@@ -1,0 +1,37 @@
+body{
+    background-image:url(../img/libros.jpg);
+ 
+}
+
+.container{
+
+    background-color: hsl(208, 100%, 97%, 80%);
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.input-submit{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    color: aliceblue;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+.subtitulo{
+font-size: 12px;
+margin: 0;
+font-weight: 300;
+}
+
+.autor{
+    margin: 0;
+    font-weight: 500;
+}
+
